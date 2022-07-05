@@ -1,11 +1,10 @@
 /**
  * Counter block mode.
  */
-import {
-  BlockCipherMode
-} from '../core/cipher-core.js';
+import { BlockCipherMode } from '../core/cipher-core.js';
 
 export class CTR extends BlockCipherMode {
+  static name = 'CTR'
 }
 CTR.Encryptor = class extends CTR {
   processBlock(words, offset) {

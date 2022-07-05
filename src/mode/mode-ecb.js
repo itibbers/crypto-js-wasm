@@ -1,11 +1,10 @@
 /**
  * Electronic Codebook block mode.
  */
-import {
-  BlockCipherMode
-} from '../core/cipher-core.js';
+import { BlockCipherMode } from '../core/cipher-core.js';
 
 export class ECB extends BlockCipherMode {
+  static name = 'ECB'
 }
 ECB.Encryptor = class extends ECB {
   processBlock(words, offset) {

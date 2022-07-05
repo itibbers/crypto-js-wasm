@@ -1,11 +1,10 @@
 /**
  * Output Feedback block mode.
  */
-import {
-  BlockCipherMode
-} from '../core/cipher-core.js';
+import { BlockCipherMode } from '../core/cipher-core.js';
 
 export class OFB extends BlockCipherMode {
+  static name = 'OFB'
 }
 OFB.Encryptor = class extends OFB {
   processBlock(words, offset) {

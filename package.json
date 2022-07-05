@@ -1,9 +1,11 @@
 {
-  "name": "@originjs/crypto-js-wasm",
+  "name": "crypto-js-wasm",
   "version": "1.0.0",
   "description": "An alternate to crypto-js implemented with WebAssembly and ESM",
   "main": "lib/index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "npm run clean && node build/build.js",
     "clean": "rimraf lib",
@@ -80,6 +82,7 @@
   },
   "dependencies": {
     "add": "^2.0.6",
+    "buffer": "^6.0.3",
     "global": "^4.4.0",
     "pako": "^2.0.4"
   }

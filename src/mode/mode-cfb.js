@@ -1,6 +1,4 @@
-import {
-  BlockCipherMode
-} from '../core/cipher-core.js';
+import { BlockCipherMode } from '../core/cipher-core.js';
 
 function generateKeystreamAndEncrypt(words, offset, blockSize, cipher) {
   const _words = words;
@@ -30,9 +28,9 @@ function generateKeystreamAndEncrypt(words, offset, blockSize, cipher) {
  * Cipher Feedback block mode.
  */
 export class CFB extends BlockCipherMode {
+  static name = 'CFB'
 
-  static Encryptor(){}
-
+  static Encryptor() {}
 }
 CFB.Encryptor = class extends CFB {
   processBlock(words, offset) {
