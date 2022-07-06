@@ -3,26 +3,26 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    jest: true,
+    jest: true
   },
   parser: 'babel-eslint',
   extends: 'eslint:recommended',
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
-      impliedStrict: true,
-    },
+      impliedStrict: true
+    }
   },
   rules: {
     quotes: ['warn', 'single'],
     'linebreak-style': [0, 'error', 'windows'],
     indent: ['error', 2],
-    semi: ['error', 'always'],
+    semi: 'off',
     'comma-dangle': ['error', 'always'],
     'no-cond-assign': ['error', 'always'],
     'no-console': 'off',
@@ -32,6 +32,6 @@ module.exports = {
     'no-use-before-define': 'warn',
     'max-len': 'off',
     'comma-dangle': ['error', 'never'],
-    'require-atomic-updates': 'off',
-  },
+    'require-atomic-updates': 'off'
+  }
 }
