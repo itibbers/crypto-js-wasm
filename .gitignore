@@ -4,3 +4,4 @@ node_modules
 coverage
 .idea
 pnpm-lock.yaml
+.DS_Store
